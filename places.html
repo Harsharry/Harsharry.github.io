@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
         integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
         crossorigin="" />
-        <link rel="shortcut icon" href="public\images\logo\logo.jpg" type="image/x-icon">
+        <link rel="shortcut icon" href="images\logo\logo.jpg" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Poppins:wght@400;500;600;700&display=swap"
             rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <!-- css  -->
-        <link rel="stylesheet" href="public/sass/style.css">
+        <link rel="stylesheet" href="sass/style.css">
     <!-- Add styles for the music player -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css" />
     <style>
@@ -120,7 +120,9 @@
 <header class="primary-header">
     <div class="left-part">
         <div class="logo">
+        <a href="index.html" style="text-decoration:none">
             <h1>Visit <span>L</span>iverpool</h1>
+        </a>
         </div>
     </div>
     <div class="right-part">
@@ -178,7 +180,7 @@
         }).addTo(map);
 
         var customIcon = L.icon({
-            iconUrl: 'public/images/mediasection/giphy.gif', // URL of your custom GIF
+            iconUrl: 'images/mediasection/giphy.gif', // URL of your custom GIF
             iconSize: [50, 50], // Size of the GIF image
             iconAnchor: [25, 50], // Point of the icon which corresponds to marker's location
         });
@@ -230,8 +232,8 @@
             container: document.querySelector('.aplayer'),
             audio: [{
                 name: 'Penny Lane (Acoustic)',
-                url: 'public/music/pennylane.mp3',
-                cover: 'public/images/logo/logo.jpg',
+                url: 'music/pennylane.mp3',
+                cover: 'images/logo/logo.jpg',
             }],
             mini: true,
             autoplay: false,
@@ -258,7 +260,7 @@
         </div>
         <div class="main-container">
             <div class="image image-1">
-                <img src="public\images\mediasection\footer.jpg" alt="Royal Albert Docks & City Centre">
+                <img src="images\mediasection\footer.jpg" alt="Royal Albert Docks & City Centre">
                 <h3>Royal Albert Docks & City Centre</h3>
             </div>
 
@@ -267,7 +269,7 @@
         <span class="close" id="close-1">&times;</span>
         <div class="details" id="details-1">
             <div >
-                <img class="image-details" src="public\images\mediasection\footer.jpg" alt="">
+                <img class="image-details" src="images\mediasection\footer.jpg" alt="">
             </div>
             <div class="text-details">
                 <h2>Royal Albert Docks & City Centre</h2>
@@ -287,7 +289,7 @@
                 
 
             <div class="image image-2">
-                <img src="public\images\mediasection\statue.jpg" alt="The Beatles Statue">
+                <img src="images\mediasection\statue.jpg" alt="The Beatles Statue">
                 <h3>The Beatles Statue</h3>
             </div>
 
@@ -296,7 +298,7 @@
                     <span class="close" id="close-1">&times;</span>
                     <div class="details" id="details-1">
                         <div >
-                            <img class="image-details" src="public\images\mediasection\statue.jpg" alt="">
+                            <img class="image-details" src="images\mediasection\statue.jpg" alt="">
                         </div>
                         <div class="text-details">
                             <h2>The Beatles Statue</h2>
@@ -313,7 +315,7 @@
             </div>
 
             <div class="image image-3">
-                <img src="public\images\mediasection\thebeatlesstory.jpg" alt="Hvítserkur">
+                <img src="images\mediasection\thebeatlesstory.jpg" alt="Hvítserkur">
                 <h3>The Beatles Story Museum</h3>
             </div>
 
@@ -322,7 +324,7 @@
                                 <span class="close" id="close-1">&times;</span>
                                 <div class="details" id="details-1">
                                     <div >
-                                        <img class="image-details" src="public\images\mediasection\thebeatlesstory.jpg" alt="">
+                                        <img class="image-details" src="images\mediasection\thebeatlesstory.jpg" alt="">
                                     </div>
                                     <div class="text-details">
                                         <h2>The Beatles Story Museum</h2>
@@ -339,39 +341,39 @@
                         </div>
 
             <div class="image image-4">
-                <img src="public\images\mediasection\johnhouse.jpg" alt="Flatey village">
+                <img src="images\mediasection\johnhouse.jpg" alt="Flatey village">
                 <h3>John Lennon's Childhood Home</h3>
             </div>
             <div class="image image-5">
-                <img src="public\images\mediasection/eleanorrigbystatue.webp" alt="Eleanor Rigby Statue">
+                <img src="images\mediasection/eleanorrigbystatue.webp" alt="Eleanor Rigby Statue">
                 <h3>Eleanor Rigby Statue</h3>
             </div>
             <div class="image image-6">
-                <img src="public\images\mediasection\georgehouse.jpg" alt=" George Harrison's House">
+                <img src="images\mediasection\georgehouse.jpg" alt=" George Harrison's House">
                 <h3>George Harrison's Childhood House</h3>
             </div>
             <div class="image image-7">
-                <img src="public\images\mediasection/wooltonchurch.jpg" alt="St Peter's Church, Woolton">
+                <img src="images\mediasection/wooltonchurch.jpg" alt="St Peter's Church, Woolton">
                 <h3>St Peter's Church, Woolton</h3>
             </div>
             <div class="image image-8">
-                <img src="public\images\mediasection\paulhouse.jpg" alt="Paul McCartney's House">
+                <img src="images\mediasection\paulhouse.jpg" alt="Paul McCartney's House">
                 <h3>Paul McCartney's Childhood House</h3>
             </div>
             <div class="image image-9">
-                <img src="public\images\mediasection\grave.jpg" alt="Eleanor Rigby Grave">
+                <img src="images\mediasection\grave.jpg" alt="Eleanor Rigby Grave">
                 <h3>Eleanor Rigby Grave</h3>
             </div>
             <div class="image image-10">
-                <img src="public\images\mediasection\barbershop.jpg" alt="Penny Lane Barber Shop">
+                <img src="images\mediasection\barbershop.jpg" alt="Penny Lane Barber Shop">
                 <h3>Penny Lane Barber Shop</h3>
             </div>
             <div class="image image-11">
-                <img src="public\images\mediasection\ringohouse.jpg" alt="Ringo Starr's House">
+                <img src="images\mediasection\ringohouse.jpg" alt="Ringo Starr's House">
                 <h3>Ringo Starr's Childhood House</h3>
             </div>
             <div class="image image-12">
-                <img src="public\images\mediasection\brianepsteinstatue.webp" alt="Brian Epstein's Statue">
+                <img src="images\mediasection\brianepsteinstatue.webp" alt="Brian Epstein's Statue">
                 <h3>Brian Epstein's Statue</h3>
             </div>
         </div>
@@ -386,7 +388,7 @@
         <footer>
             <p>&copy; 2024 Your Website. All rights reserved.</p>
         </footer>
-        <script src="public/js/main.js"></script>
+        <script src="js/main.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
 

@@ -6,11 +6,17 @@ ham.addEventListener("click",()=>{
     nav.classList.toggle('active')
 })
 
-const loadder = document.getElementById('preloadder')
+const loader = document.getElementById('preloader');
 
-window.addEventListener("load",()=>{
-    loadder.style.display = "none";
+const hideLoader = () => {
+    loader.style.display = "none !important";
+    console.log('hide loader');
+};
+
+window.addEventListener("load", () => {
+    setTimeout(hideLoader, 7000);
 });
+
 
 
 
@@ -107,4 +113,4 @@ confetti.setCount(500);
 confetti.setSize(2);
 confetti.setPower(40);
 confetti.setFade(false);
-confetti.destroyTarget(false);
+confetti.destroyTarget(true);
