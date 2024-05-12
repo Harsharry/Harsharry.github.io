@@ -24,8 +24,8 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  background-color: hsl(198deg, 100%, 6%);
+  font-family: "Poppins", sans-serif !important; 
+  background-color: hsl(198deg, 100%, 6%) !important;
 }
 
 a, a:visited, a:active {
@@ -163,30 +163,8 @@ li {
   max-width: 80%;
   opacity: 70%;
 }
-.main-text p::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: -15px;
-  transform: translateY(-50%) rotate(-45deg);
-  width: 10px;
-  height: 10px;
-  border-radius: 50px;
-  opacity: 20%;
-  background-color: hsl(167deg, 82%, 65%);
-}
-.main-text p::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: -15px;
-  transform: translateY(-50%) rotate(-45deg);
-  width: 10px;
-  height: 10px;
-  border-radius: 50px;
-  opacity: 20%;
-  background-color: hsl(167deg, 82%, 65%);
-}
+
+
 
 .grid {
   display: grid;
@@ -731,7 +709,7 @@ footer {
 footer .footer-image {
   width: 100%;
   height: 80vh;
-  background: url("../images/places/footer.png");
+  background: url("../images/mediasection/statue.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -929,8 +907,12 @@ footer .credit a {
   opacity: 1;
 }
   .about .main-text p {
-    width: 80%;
+ 
+    font-size: 1.5rem;
+      
   }
+
+
   .Place .main-container .Place-cards {
     grid-template-columns: 1fr 1fr;
   }

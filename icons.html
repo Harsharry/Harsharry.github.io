@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The Icons</title>
+    <link rel="stylesheet" href="sass/style.css">
+    <link rel="shortcut icon" href="images\logo\logo.jpg" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css" />
+</head>
+<body>
+    <style>
+
+                .aplayer {
+            position: fixed;
+            bottom: 0;
+            left:auto;
+            right: auto;
+            width: 100%;
+            max-width: 500px;
+            z-index: 9999;
+            border: 3px solid #ffffff;
+        }
+    </style>
+
+        <header class="primary-header">
+            <div class="left-part">
+                <div class="logo">
+                    <a href="main.html" style="text-decoration:none">
+                        <h1>Visit <span>L</span>iverpool</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="right-part">
+                <div class="navbar">
+                    <ul>
+                        <li><a href="icons.html">The Icons</a></li>
+                        <li><a href="places.html">Places</a></li>
+                        <li> <a href="#sale" style="color: #ffcc00;">Magical Mystery Tour</a> </li>
+                        <li><a href="index.html">Logout</a></li>
+                    </ul>
+        
+                </div>
+                <div class="ham-menu">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </div>
+            </div>
+        </header>
+
+            <div class="aplayer">
+                <h6>Now Playing</h6>
+                <audio id="audio" preload="auto" controls style="display: none;">
+                    <source src="music/pennylane.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+        <main>
+            <section class="about" id="about">
+                <div class="main-text">
+                    <h2>The Icons</h2>
+                    <h1>The Beatles</h1>
+                    <p>The Beatles were an English pop / rock band, started in Liverpool, England in 1960. The members were John Lennon, Paul
+                    McCartney, George Harrison, and Ringo Starr. Most people say they are the most successful and influential band in the
+                    history of popular music. The group were a main part of the creation of 1960s counterculture. They began as a skiffle
+                    band, and were influenced by 1950s American rock and roll. In their later years, the band was experimental with genres
+                    such as different types of rock, classical, and Indian music. <p>
+                    <p>
+                    Their main songwriters were Lennon and McCartney. Before The Beatles became popular, they played in clubs in Liverpool
+                    and Hamburg over three years between 1960 and 1963, with Stuart Sutcliffe playing bass. They went through many drummers,
+                    including Pete Best, before finally asking Ringo Starr to join in 1962. Sutcliffe also quit, meaning Paul McCartney
+                    started playing the bass instead. Brian Epstein was their manager and George Martin produced most of their music. Their
+                    first single was "Love Me Do", in late 1962. It was a hit and they became popular in the United Kingdom. As they became
+                    more popular, their popularity was named "Beatlemania".</p>
+
+                    <p>By 1964, the Beatles were worldwide stars and led the "British Invasion" of the USA. They made some of the best-selling
+                    albums of the 1960s, with twelve studio albums. They broke up in 1970.As the years passed, The Beatles’ influence continued to reverberate across generations, shaping the course of popular
+                    music and leaving an enduring legacy that transcends time and geography.
+                    
+                    Today, their music remains as beloved and influential as ever, a testament to the enduring power of creativity,
+                    collaboration, and the human spirit. In conclusion, a visit to Liverpool offers a pilgrimage like no other for fans of
+                    The Beatles, providing a unique opportunity to immerse oneself in the sights, sounds, and stories that continue to
+                    define the band’s enduring legacy.</p>
+                </div>
+             
+            
+            </section>
+        </main>
+
+        <footer>
+                <div class="footer-image">
+                    <div class="overlay1"></div>
+                    <div class="overlay2"></div>
+                
+                </div>
+            <div class="main-container">
+                <div class="heading-foo">
+        
+                    <h1>Liverpool</h1>
+                    <h5>Birthplace of the Greatest Band of All Time</h5>
+                </div>
+        
+                <div class="main">
+                    <h1>Quick Links</h1>
+                    <ul>
+                        <li><a href="icons.html">The Icons</a></li>
+                        <li><a href="places.html">Places</a></li>
+                        <li><a href="main.html#sale">Magical Mystery Tour</a></li>
+                        <li><a href="index.html">Logout</a></li>
+                    </ul>
+                </div>
+                <div class="contact-info">
+                    <h1>Contacts</h1>
+                    <div class="contact-info-text">
+                        <p>(+44) 125 4568</p>
+                        <p>visitliverpool@help.com</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+<script>
+     const ap = new APlayer({
+            container: document.querySelector('.aplayer'),
+            audio: [{
+                name: 'Penny Lane (Acoustic)',
+                url: 'music/pennylane.mp3',
+                cover: 'images/logo/logo.jpg',
+            }],
+            mini: true,
+            autoplay: false,
+            loop: 'all',
+            volume: 0.7,
+            mutex: true,
+            lrcType: false,
+            listFolded: false,
+            listMaxHeight: 90,
+            preload: 'auto',
+            storageName: 'aplayer-setting',
+            // More options for customization
+        });
+</script>
+
+</body>
+</html>

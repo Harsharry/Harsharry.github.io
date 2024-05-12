@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Beatles Map</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
         integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -21,7 +21,10 @@
     <style>
         #map {
             height: 80vh;
-            width: 100%;
+            width: 80%;
+            margin-left:15rem; 
+            margin-right:15rem;
+            color:#000000
         }
 
         .aplayer {
@@ -32,6 +35,7 @@
             width: 100%;
             max-width: 500px;
             z-index: 9999;
+            border: 3px solid #ffffff;
         }
 .popup {
     display: none;
@@ -128,7 +132,7 @@
     <div class="right-part">
         <div class="navbar">
             <ul>
-                <li><a href="#about">The Icon</a></li>
+                <li><a href="icons.html">The Icons</a></li>
                 <li><a href="#Place">Places</a></li>
                 <li> <a href="main.html#sale" style="color: #ffcc00;">Magical Mystery Tour</a> </li>
                 <li><a href="index.html">Logout</a></li>
@@ -146,13 +150,20 @@
 
 
     <main>
-        <div id="map"></div>
+
+                <div class="main-text">
+                    
+                    <h1>Interactive Map</h1>
+                </div>
+
+        <div id="map" ></div>
 
 
     <!-- Music player -->
     <div class="aplayer">
+        <h6>Now Playing</h6>
         <audio id="audio" preload="auto" controls style="display: none;">
-            <source src="https://www.example.com/your-audio-file.mp3" type="audio/mpeg">
+            <source src="music/pennylane.mp3" type="audio/mp3">
             Your browser does not support the audio element.
         </audio>
     </div>
@@ -403,30 +414,58 @@
                 <h3>John Lennon's Childhood Home</h3>
             </div>
 
-            <div class="popup" id="popup-5">
+            <div class="popup" id="popup-4">
                 <div class="popup-content">
                     <span class="close" id="close-1">&times;</span>
                     <div class="details" id="details-1">
                         <div>
-                            <img class="image-details" src="images\mediasection\eleanorrigbystatue.webp" alt="Eleanor Rigby Statue">
+                            <img class="image-details" src="images\mediasection\johnhouse.jpg"
+                                alt="John Lennon Childhood Home">
                         </div>
                         <div class="text-details">
-                            <h2>Eleanor Rigby Statue</h2>
-                            <p>Eleanor Rigby is a statue in Stanley Street, Liverpool, England, designed and made by the entertainer Tommy Steele. It
-                            is based on the subject of the Beatles' 1966 song "Eleanor Rigby", which is credited to the Lennon – McCartney
-                            partnership.</p>
-                            <p><strong>Opening Hours:</strong>24/7</p>
-                            <p><strong>Buy Tickets:</strong> <a >Free!</a></p>
+                            <h2>John Lennon's Childhood Home</h2>
+                            <p>Mendips, located at 251 Menlove Avenue in Liverpool, England, is the childhood home of John Lennon,
+                                one of the founding members of The Beatles. ohn Lennon lived at Mendips from 1946, at the age of five, until 1963 and is now
+                                preserved by the National Trust.</p>
+                          
                         </div>
                     </div>
                 </div>
             </div>
 
 
+            
+
+
             <div class="image image-5">
                 <img src="images\mediasection/eleanorrigbystatue.webp" alt="Eleanor Rigby Statue">
                 <h3>Eleanor Rigby Statue</h3>
-            </div>
+
+                </div>
+
+                <div class="popup" id="popup-5">
+                    <div class="popup-content">
+                        <span class="close" id="close-1">&times;</span>
+                        <div class="details" id="details-1">
+                            <div>
+                                <img class="image-details" src="images\mediasection\eleanorrigbystatue.webp" alt="Eleanor Rigby Statue">
+                            </div>
+                            <div class="text-details">
+                                <h2>Eleanor Rigby Statue</h2>
+                                <p>Eleanor Rigby is a statue in Stanley Street, Liverpool, England, designed and made by the entertainer
+                                    Tommy Steele. It
+                                    is based on the subject of the Beatles' 1966 song "Eleanor Rigby", which is credited to the Lennon –
+                                    McCartney
+                                    partnership.</p>
+                                <p><strong>Opening Hours:</strong>24/7</p>
+                                <p><strong>Buy Tickets:</strong> <a>Free!</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            
             <div class="image image-6">
                 <img src="images\mediasection\georgehouse.jpg" alt=" George Harrison's House">
                 <h3>George Harrison's Childhood House</h3>
@@ -480,10 +519,10 @@
             <div class="main">
                 <h1>Quick Links</h1>
                 <ul>
-                    <li><a href="#explore">Explore</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#Place">Places</a></li>
-                    <li><a href="#media">Media</a></li>
+                    <li><a href="icons.html">The Icons</a></li>
+                    <li><a href="places.html">Places</a></li>
+                    <li><a href="main.html#sale">Magical Mystery Tour</a></li>
+                    <li><a href="index.html">Logout</a></li>
                 </ul>
             </div>
             <div class="contact-info">
