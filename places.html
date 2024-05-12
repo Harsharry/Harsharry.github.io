@@ -19,6 +19,27 @@
     <!-- Add styles for the music player -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css" />
     <style>
+
+        /* Style for heart icon and wishlist text */
+.wish-list {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.heart-icon {
+    font-size: 24px;
+    color: red; /* Adjust color as needed */
+}
+
+.wishlist-text {
+    margin-left: 5px;
+    font-size: 16px;
+    color: #000; /* Adjust color as needed */
+}
+
+
         #map {
             height: 80vh;
             width: 80%;
@@ -350,6 +371,10 @@
                 </p>
             </div>
         </div>
+        <div class="wish-list">
+            <span class="heart-icon">&hearts;</span>
+            <span class="wishlist-text">WishList</span>
+        </div>
     </div>
 </div>
 
@@ -381,6 +406,10 @@
                             </p>
                         </div>
                     </div>
+                    <div class="wish-list">
+                        <span class="heart-icon">&hearts;</span>
+                        <span class="wishlist-text">WishList</span>
+                    </div>
                 </div>
             </div>
 
@@ -406,6 +435,10 @@
                                         </p>
                                     </div>
                                 </div>
+                                <div class="wish-list">
+                                    <span class="heart-icon">&hearts;</span>
+                                    <span class="wishlist-text">WishList</span>
+                                </div>
                             </div>
                         </div>
 
@@ -429,6 +462,10 @@
                                 preserved by the National Trust.</p>
                           
                         </div>
+                    </div>
+                    <div class="wish-list">
+                        <span class="heart-icon">&hearts;</span>
+                        <span class="wishlist-text">WishList</span>
                     </div>
                 </div>
             </div>
@@ -461,6 +498,10 @@
                                 <p><strong>Buy Tickets:</strong> <a>Free!</a></p>
                             </div>
                         </div>
+                        <div class="wish-list">
+                            <span class="heart-icon">&hearts;</span>
+                            <span class="wishlist-text">WishList</span>
+                        </div>
                     </div>
                 </div>
 
@@ -470,31 +511,215 @@
                 <img src="images\mediasection\georgehouse.jpg" alt=" George Harrison's House">
                 <h3>George Harrison's Childhood House</h3>
             </div>
+
+            <div class="popup" id="popup-6">
+                <div class="popup-content">
+                    <span class="close" id="close-1">&times;</span>
+                    <div class="details" id="details-1">
+                        <div>
+                            <img class="image-details" src="images\mediasection\georgehouse.jpg"
+                                alt="George Harrison Childhood Home">
+                        </div>
+                        <div class="text-details">
+                            <h2>George Harrison's Childhood Home</h2>
+                            <p>George Harrison's childhood home, located at 25 Upton Green in Speke, Liverpool, England, was where
+                                he lived with his family from 1950 to 1962. This modest three-bedroom house also served as an early
+                                rehearsal space for The Beatles.</p>
+                        </div>
+                    </div>
+                    <div class="wish-list">
+                        <span class="heart-icon">&hearts;</span>
+                        <span class="wishlist-text">WishList</span>
+                    </div>
+                </div>
+            </div>
+
+
+
             <div class="image image-7">
                 <img src="images\mediasection/wooltonchurch.jpg" alt="St Peter's Church, Woolton">
                 <h3>St Peter's Church, Woolton</h3>
             </div>
+
+            <div class="popup" id="popup-7">
+                <div class="popup-content">
+                    <span class="close" id="close-1">&times;</span>
+                    <div class="details" id="details-1">
+                        <div>
+                            <img class="image-details" src="images\mediasection/wooltonchurch.jpg"
+                                alt="St Peter's Church, Woolton">
+                        </div>
+                        <div class="text-details">
+                            <h2>St Peter's Church, Woolton</h2>
+                            <p>St Peter's Church is more than just an active Anglican parish church in Woolton, Liverpool, England.
+                                It holds a pivotal place in music history! This very spot is where John Lennon and Paul McCartney
+                                met in 1957, a fateful encounter that sparked their legendary songwriting partnership and ultimately
+                                led to the formation of The Beatles. The church itself boasts a 90-foot bell tower, making it the
+                                highest point in Liverpool. Additionally, beautiful stained glass windows and a grand organ grace
+                                the interior.</p>
+                        </div>
+                    </div>
+                    <div class="wish-list">
+                        <span class="heart-icon">&hearts;</span>
+                        <span class="wishlist-text">WishList</span>
+                    </div>
+                </div>
+            </div>
+
             <div class="image image-8">
                 <img src="images\mediasection\paulhouse.jpg" alt="Paul McCartney's House">
                 <h3>Paul McCartney's Childhood House</h3>
             </div>
+
+            <div class="popup" id="popup-8">
+                <div class="popup-content">
+                    <span class="close" id="close-1">&times;</span>
+                    <div class="details" id="details-1">
+                        <div>
+                            <img class="image-details" src="images\mediasection\paulhouse.jpg"
+                                alt="Paul McCartney Childhood Home">
+                        </div>
+                        <div class="text-details">
+                            <h2>Paul McCartney's Childhood Home</h2>
+                            <p>20 Forthlin Road is the childhood home of Paul McCartney. Owned by the National Trust, this is where Paul lived during the band's formative years. The house itself is a
+                                typical example of post-war terraced council housing and offers a glimpse into Paul's early life.
+                                It's believed that many of The Beatles' earliest songs were composed and rehearsed here, making it a
+                                must-visit for any Beatles enthusiast.</p>
+                        </div>
+                    </div>
+                    <div class="wish-list">
+                        <span class="heart-icon">&hearts;</span>
+                        <span class="wishlist-text">WishList</span>
+                    </div>
+                </div>
+            </div>
+
+
             <div class="image image-9">
                 <img src="images\mediasection\grave.jpg" alt="Eleanor Rigby Grave">
                 <h3>Eleanor Rigby Grave</h3>
             </div>
+
+            <div class="popup" id="popup-9">
+                <div class="popup-content">
+                    <span class="close" id="close-1">&times;</span>
+                    <div class="details" id="details-1">
+                        <div>
+                            <img class="image-details" src="images\mediasection\grave.jpg" alt="Eleanor Rigby's Grave">
+                        </div>
+                        <div class="text-details">
+                            <h2>Eleanor Rigby's Grave</h2>
+                            <p>While not directly connected to The Beatles themselves, Eleanor Rigby's grave in the churchyard of St
+                                Peter's Church, Woolton, Liverpool, became a legend after inspiring the hauntingly
+                                beautiful song of the same name written by Paul McCartney. The song, featured on the Revolver album,
+                                tells the story of a lonely life. The identity of the real Eleanor Rigby buried there remains
+                                unknown, but the mystery adds to the song's mystique.</p>
+                        </div>
+                    </div>
+                    <div class="wish-list">
+                        <span class="heart-icon">&hearts;</span>
+                        <span class="wishlist-text">WishList</span>
+                    </div>
+                </div>
+            </div>
+
+
             <div class="image image-10">
                 <img src="images\mediasection\barbershop.jpg" alt="Penny Lane Barber Shop">
                 <h3>Penny Lane Barber Shop</h3>
             </div>
+
+            <div class="popup" id="popup-10">
+                <div class="popup-content">
+                    <span class="close" id="close-1">&times;</span>
+                    <div class="details" id="details-1">
+                        <div>
+                            <img class="image-details" src="images\mediasection\barbershop.jpg"
+                                alt="Penny Lane Barber Shop">
+                        </div>
+                        <div class="text-details">
+                            <h2>Penny Lane Barber Shop</h2>
+                            <p>While not the barber shop directly mentioned in the Beatles song "Penny Lane," this shop on Penny
+                                Lane itself has become a popular tourist destination for fans. The song, featured on the album
+                                Magical Mystery Tour, evokes memories of a childhood street scene. This particular barber shop
+                                wasn't Bioletti's (now Tony Slavin's) frequented by The Beatles, but it captures the essence of the
+                                nostalgic charm depicted in the song.</p>
+                        </div>
+                    </div>
+                    <div class="wish-list">
+                        <span class="heart-icon">&hearts;</span>
+                        <span class="wishlist-text">WishList</span>
+                    </div>
+                </div>
+            </div>
+
+
             <div class="image image-11">
                 <img src="images\mediasection\ringohouse.jpg" alt="Ringo Starr's House">
                 <h3>Ringo Starr's Childhood House</h3>
             </div>
+
+            <div class="popup" id="popup-11">
+                <div class="popup-content">
+                    <span class="close" id="close-1">&times;</span>
+                    <div class="details" id="details-1">
+                        <div>
+                            <img class="image-details" src="images\mediasection\ringohouse.jpg"
+                                alt="Ringo Starr Childhood Home">
+                        </div>
+                        <div class="text-details">
+                            <h2>Ringo Starr's Childhood Home</h2>
+                            <p>This modest house at 10 Admiral Grove in Liverpool, England, was the childhood home of Ringo Starr. Ringo lived here from the age of three until he rose to fame with the
+                                band in 1963. The house is now a private residence, but it remains a significant landmark for
+                                Beatles fans. It's just down the street from the Sentimental Journey pub and hotel, a popular spot
+                                for Beatles enthusiasts.</p>
+                        </div>
+                    </div>
+                    <div class="wish-list">
+                        <span class="heart-icon">&hearts;</span>
+                        <span class="wishlist-text">WishList</span>
+                    </div>
+                </div>
+            </div>
+
+
             <div class="image image-12">
                 <img src="images\mediasection\brianepsteinstatue.webp" alt="Brian Epstein's Statue">
                 <h3>Brian Epstein's Statue</h3>
             </div>
+
+            <div class="popup" id="popup-12">
+                <div class="popup-content">
+                    <span class="close" id="close-1">&times;</span>
+                    <div class="details" id="details-1">
+                        <div>
+                            <img class="image-details" src="images\mediasection\brianepsteinstatue.webp" alt="Brian Epstein Statue">
+                        </div>
+                        <div class="text-details">
+                            <h2>Brian Epstein Statue</h2>
+                            <p>This striking bronze statue honors Brian Epstein, the legendary manager of The Beatles. It's located
+                                on the corner of Button Street and Whitechapel in Liverpool, England, close to the Epstein family's
+                                former NEMS store. The statue depicts Brian striding purposefully along Whitechapel towards Mathew
+                                Street, possibly on his way to see The Beatles perform at the Cavern Club for the first time in
+                                1961. In his right hand, he clutches a management contract, symbolizing the pivotal role he played
+                                in launching The Beatles' careers.</p>
+                            <p>The statue, unveiled in August 2022, was created by sculptor Andy Edwards, who is also responsible
+                                for the Beatles statue on the Liverpool waterfront. It was funded through a public crowdfunding
+                                campaign, donations from a generous anonymous donor, and contributions from Liverpool BID Company
+                                and The Cavern Club.</p>
+                        </div>
+                    </div>
+                    <div class="wish-list">
+                        <span class="heart-icon">&hearts;</span>
+                        <span class="wishlist-text">WishList</span>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
+
+
     </section>
 
     </main>
@@ -541,30 +766,34 @@
 
             <script>
                 document.addEventListener('DOMContentLoaded', function () {
-                        // Get all image elements
                         const images = document.querySelectorAll('.image');
 
-                        // Add click event listener to each image
                         images.forEach((image, index) => {
                             image.addEventListener('click', function () {
-                                // Show the corresponding popup when an image is clicked
                                 const popup = document.getElementById(`popup-${index + 1}`);
                                 popup.style.display = 'block';
                             });
                         });
 
-                        // Get all close buttons
                         const closeButtons = document.querySelectorAll('.close');
 
-                        // Add click event listener to each close button
                         closeButtons.forEach((closeButton) => {
                             closeButton.addEventListener('click', function () {
-                                // Hide the corresponding popup when the close button is clicked
+                                
                                 const popup = closeButton.parentElement.parentElement;
                                 popup.style.display = 'none';
                             });
                         });
                     });
+
+                    // Wish List
+
+    document.querySelectorAll('.wish-list').forEach(function (wishlistItem) {
+        wishlistItem.addEventListener('click', function () {
+            
+            alert('Added to wish list!\n (Just a demo, no real functionality)');
+        });
+    });
 
 
 
