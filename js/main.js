@@ -4,20 +4,15 @@ const nav = document.querySelector('.navbar')
 ham.addEventListener("click",()=>{
     ham.classList.toggle('active')
     nav.classList.toggle('active')
+    
 })
 
-const loader = document.getElementById('preloader');
 
-const hideLoader = () => {
-    loader.style.display = "none !important";
-    console.log('hide loader');
-};
+const loadder = document.getElementById('preloadder')
 
-window.addEventListener("load", () => {
-    setTimeout(hideLoader, 7000);
+window.addEventListener("load",()=>{
+    loadder.style.display = "none";
 });
-
-
 
 
 
