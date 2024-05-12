@@ -154,15 +154,7 @@ li {
   font-size: 1rem;
   position: relative;
 }
-.main-text h2::after {
-  content: "";
-  position: absolute;
-  top: -3px;
-  right: -5px;
-  width: 0.4rem;
-  height: 0.4rem;
-  background-color: hsl(167deg, 61%, 45%);
-}
+
 .main-text p {
   display: inline-block;
   font-size: 1.3rem;
@@ -873,9 +865,6 @@ footer .credit a {
   color: hsl(167deg, 82%, 65%);
 }
 
-@media (min-width: 868px) {
-
-
   #preloadder {
     background-size: 15%;
   }
@@ -955,9 +944,7 @@ footer .credit a {
     padding: 0 0 0 5rem;
   }
 
-  
 
-}
 
 
 
