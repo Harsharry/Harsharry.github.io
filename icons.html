@@ -6,26 +6,12 @@
     <title>The Icons</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images\logo\logo.jpg" type="image/x-icon">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Poppins:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css" />
 </head>
 <body>
-    <style>
 
-                .aplayer {
-            position: fixed;
-            bottom: 0;
-            left:auto;
-            right: auto;
-            width: 100%;
-            max-width: 500px;
-            z-index: 9999;
-            border: 3px solid #ffffff;
-        }
-    </style>
 
         <header class="primary-header">
             <div class="left-part">
@@ -49,13 +35,7 @@
             </div>
         </header>
 
-            <div class="aplayer">
-                <h6>Now Playing</h6>
-                <audio id="audio" preload="auto" controls style="display: none;">
-                    <source src="music/pennylane.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
+
 
         <main>
             <section class="about" id="about">
@@ -121,27 +101,7 @@
             </div>
         </footer>
 
-<script>
-     const ap = new APlayer({
-            container: document.querySelector('.aplayer'),
-            audio: [{
-                name: 'Penny Lane (Acoustic)',
-                url: 'music/pennylane.mp3',
-                cover: 'images/logo/logo.jpg',
-            }],
-            mini: true,
-            autoplay: false,
-            loop: 'all',
-            volume: 0.7,
-            mutex: true,
-            lrcType: false,
-            listFolded: false,
-            listMaxHeight: 90,
-            preload: 'auto',
-            storageName: 'aplayer-setting',
-            // More options for customization
-        });
-</script>
+
 
 </body>
 </html>

@@ -14,130 +14,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Poppins:wght@400;500;600;700&display=swap"
             rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <!-- css  -->
+
         <link rel="stylesheet" href="css/style.css">
-    <!-- Add styles for the music player -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css" />
-    <style>
-
-        /* Style for heart icon and wishlist text */
-.wish-list {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    cursor: pointer;
-}
-
-.heart-icon {
-    font-size: 24px;
-    color: red; /* Adjust color as needed */
-}
-
-.wishlist-text {
-    margin-left: 5px;
-    font-size: 16px;
-    color: #000; /* Adjust color as needed */
-}
-
-
-        #map {
-            height: 80vh;
-            width: 80%;
-            margin-left:15rem; 
-            margin-right:15rem;
-            color:#000000
-        }
-
-        .aplayer {
-            position: fixed;
-            bottom: 0;
-            left:auto;
-            right: auto;
-            width: 100%;
-            max-width: 500px;
-            z-index: 9999;
-            border: 3px solid #ffffff;
-        }
-.popup {
-    display: none;
-    position: fixed;
-    z-index: 9999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    overflow: auto;
-}
-
-.popup-content {
-    background-color: #fefefe;
-    margin: 5% auto;
-    padding: 20px;
-    border-radius: 5px;
-    width: 80%;
-    max-width: 700px;
-    position: relative;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
-}
-
-.close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    color: #000000;
-    font-size: 78px;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.close:hover {
-    color: #ff0707;
-}
-
-.details {
-    margin-top: 20px;
-    color: #333;
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-.details a {
-    color: #007bff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.image-details {
-    display: block;
-    width: 400px; /* Adjust the width as needed */
-    height: auto;
-    margin-top: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-
-.time-date {
-    margin-top: 20px;
-    font-size: 14px;
-    color: #666;
-}
-
-.buy-tickets {
-    margin-top: 10px;
-    font-size: 16px;
-    color: #007bff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.buy-tickets:hover {
-    color: #0056b3;
-}
-
-
-    </style>
+   
 </head>
 
 <body>
@@ -175,8 +54,6 @@
 
         <div id="map" ></div>
 
-
-    <!-- Music player -->
     <div class="aplayer">
         <h6>Now Playing</h6>
         <audio id="audio" preload="auto" controls style="display: none;">
@@ -185,157 +62,6 @@
         </audio>
     </div>
 
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-        crossorigin=""></script>
-    <!-- Add the APlayer library for the music player -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
-    <script>
-        var map = L.map('map').setView([53.4084, -2.9916], 11); // Liverpool coordinates
-
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-        }).addTo(map);
-
-        var customIcon = L.icon({
-            iconUrl: 'images/mediasection/giphy.gif', // URL of your custom GIF
-            iconSize: [50, 50], // Size of the GIF image
-            iconAnchor: [25, 50], // Point of the icon which corresponds to marker's location
-        });
-
-        var places = [
-            {
-                name: "Royal Albert Dock",
-                location: [53.3994, -2.9920],
-                description: "Famous club where The Beatles performed in their early years.",
-                targetId: "popup-1"
-            },
-            {
-                name: "The Beatles Statue",
-                location: [53.404513, -2.996435],
-                description: "Iconic Statue at Liverpool",
-                targetId: "popup-2"
-            },
-            {
-                name: "The Beatles Story Museum",
-                location: [53.39922, -2.991944],
-                description: "Official Museum of The Beatles.",
-                targetId: "popup-3"
-            },
-
-            {
-                name: "John Lennon's Childhood Home",
-                location: [53.3771, -2.8822],
-                description: "John Lennon's Childhood Home",
-                targetId: "popup-4"
-            },
-
-            { 
-                name: "Eleanor Rigby Statue",
-                location: [53.4025, -2.9794],
-                description: "Eleanor Rigby Statue",
-                targetId: "popup-5"
-            },
-
-            {
-                name: "George Harrison's Childhood House",
-                location: [53.3429, -2.8368],
-                description: "George Harrison's Childhood House",
-                targetId: "popup-6"
-            },
-
-            {
-                name: "St Peter's Church, Woolton",
-                location: [53.3760, -2.8695],
-                description: "St Peter's Church, Woolton",
-                targetId: "popup-7"
-            },
-
-            {
-                name: "Paul McCartney's Childhood House",
-                location: [53.3697, -2.8980],
-                description: "Paul McCartney's Childhood House",
-                targetId: "popup-8"
-            },
-
-            {
-                name: "Eleanor Rigby Grave",
-                location: [53.3757, -2.8715],
-                description: "Eleanor Rigby Grave",
-                targetId: "popup-9"
-            },
-
-            {
-                name: "Penny Lane Barber Shop",
-                location: [53.3895, -2.9149],
-                description: "Penny Lane Barber Shop",
-                targetId: "popup-10"
-            },
-
-            {
-                name: "Ringo Starr's Childhood House",
-                location: [53.3890, -2.9614],
-                description: "Ringo Starr's Childhood House",
-                targetId: "popup-11"
-            },
-
-            {
-                name: "Brian Epstein's Statue",
-                location: [53.4060, -2.9857],
-                description: "Brian Epstein's Statue",
-                targetId: "popup-12"
-            }
-
-            
-
-            
-            // Add more places as needed
-        ];
-
-        places.forEach(place => {
-            var marker = L.marker(place.location, { icon: customIcon }).addTo(map);
-            var popupContent = `
-        <div>
-          <b><a href="#${place.targetId}">${place.name}</a></b><br>
-          ${place.description}
-        </div>
-      `;
-            marker.bindPopup(popupContent);
-
-            // Add click event listener to the title link
-            marker.on('popupopen', function () {
-                document.querySelector(`a[href="#${place.targetId}"]`).addEventListener('click', function (event) {
-                    event.preventDefault();
-                    document.getElementById(place.targetId).style.display = 'block';
-                     // Scroll to the target ID smoothly
-                });
-            });
-        });
-
-        // Initialize APlayer
-        const ap = new APlayer({
-            container: document.querySelector('.aplayer'),
-            audio: [{
-                name: 'Penny Lane (Acoustic)',
-                url: 'music/pennylane.mp3',
-                cover: 'images/logo/logo.jpg',
-            }],
-            mini: true,
-            autoplay: false,
-            loop: 'all',
-            volume: 0.7,
-            mutex: true,
-            lrcType: false,
-            listFolded: false,
-            listMaxHeight: 90,
-            preload: 'auto',
-            storageName: 'aplayer-setting',
-            // More options for customization
-        });
-
-        // Full screen map functionality
-        map.addControl(new L.Control.Fullscreen());
-    </script>
 
 
     <section class="media" id="media">
@@ -692,7 +418,7 @@
                             <img class="image-details" src="images\mediasection\brianepsteinstatue.webp" alt="Brian Epstein Statue">
                         </div>
                         <div class="text-details">
-                            <h2>Brian Epstein Statue</h2>
+                            <h2>Brian Epstein's Statue</h2>
                             <p>This striking bronze statue honors Brian Epstein, the legendary manager of The Beatles. It's located
                                 on the corner of Button Street and Whitechapel in Liverpool, England, close to the Epstein family's
                                 former NEMS store. The statue depicts Brian striding purposefully along Whitechapel towards Mathew
@@ -794,6 +520,138 @@
 
 
             </script>
+
+                <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+                    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+                    crossorigin=""></script>
+               
+                <script>
+                    var map = L.map('map').setView([53.4084, -2.9916], 11); 
+
+                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                        maxZoom: 19,
+                    }).addTo(map);
+
+                    var customIcon = L.icon({
+                        iconUrl: 'images/mediasection/giphy.gif', 
+                        iconSize: [50, 50], 
+                        iconAnchor: [25, 50], 
+                    });
+
+                    var places = [
+                        {
+                            name: "Royal Albert Dock",
+                            location: [53.3994, -2.9920],
+                            description: "Famous club where The Beatles performed in their early years.",
+                            targetId: "popup-1"
+                        },
+                        {
+                            name: "The Beatles Statue",
+                            location: [53.404513, -2.996435],
+                            description: "Iconic Statue at Liverpool",
+                            targetId: "popup-2"
+                        },
+                        {
+                            name: "The Beatles Story Museum",
+                            location: [53.39922, -2.991944],
+                            description: "Official Museum of The Beatles.",
+                            targetId: "popup-3"
+                        },
+
+                        {
+                            name: "John Lennon's Childhood Home",
+                            location: [53.3771, -2.8822],
+                            description: "John Lennon's Childhood Home",
+                            targetId: "popup-4"
+                        },
+
+                        {
+                            name: "Eleanor Rigby Statue",
+                            location: [53.4025, -2.9794],
+                            description: "Eleanor Rigby Statue",
+                            targetId: "popup-5"
+                        },
+
+                        {
+                            name: "George Harrison's Childhood House",
+                            location: [53.3429, -2.8368],
+                            description: "George Harrison's Childhood House",
+                            targetId: "popup-6"
+                        },
+
+                        {
+                            name: "St Peter's Church, Woolton",
+                            location: [53.3760, -2.8695],
+                            description: "St Peter's Church, Woolton",
+                            targetId: "popup-7"
+                        },
+
+                        {
+                            name: "Paul McCartney's Childhood House",
+                            location: [53.3697, -2.8980],
+                            description: "Paul McCartney's Childhood House",
+                            targetId: "popup-8"
+                        },
+
+                        {
+                            name: "Eleanor Rigby Grave",
+                            location: [53.3757, -2.8715],
+                            description: "Eleanor Rigby Grave",
+                            targetId: "popup-9"
+                        },
+
+                        {
+                            name: "Penny Lane Barber Shop",
+                            location: [53.3895, -2.9149],
+                            description: "Penny Lane Barber Shop",
+                            targetId: "popup-10"
+                        },
+
+                        {
+                            name: "Ringo Starr's Childhood House",
+                            location: [53.3890, -2.9614],
+                            description: "Ringo Starr's Childhood House",
+                            targetId: "popup-11"
+                        },
+
+                        {
+                            name: "Brian Epstein's Statue",
+                            location: [53.4060, -2.9857],
+                            description: "Brian Epstein's Statue",
+                            targetId: "popup-12"
+                        }
+
+
+
+
+
+                    ];
+
+                    places.forEach(place => {
+                        var marker = L.marker(place.location, { icon: customIcon }).addTo(map);
+                        var popupContent = `
+                        <div>
+                          <b><a href="#${place.targetId}">${place.name}</a></b><br>
+                          ${place.description}
+                        </div>
+                      `;
+                        marker.bindPopup(popupContent);
+
+
+                        marker.on('popupopen', function () {
+                            document.querySelector(`a[href="#${place.targetId}"]`).addEventListener('click', function (event) {
+                                event.preventDefault();
+                                document.getElementById(place.targetId).style.display = 'block';
+
+                            });
+                        });
+                    });
+
+
+
+                    map.addControl(new L.Control.Fullscreen());
+                </script>
+
 </body>
 
 </html>
