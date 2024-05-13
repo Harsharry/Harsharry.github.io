@@ -14,23 +14,23 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: hsl(200, 38%, 80%);
+  background-color:#B9D2DF;
 }
 
 ::-webkit-scrollbar-thumb {
-  border: 2px solid hsl(198deg, 100%, 6%);
+  border: 2px solid #00151F;
   border-radius: 50px;
-  background-color: hsl(167deg, 82%, 65%);
+  background-color: rgb(83, 242, 202);
 }
 
 body {
   font-family: "Poppins", sans-serif !important; 
-  background-color: hsl(198deg, 100%, 6%) !important;
+  background-color: #00151F !important;
 }
 
 a, a:visited, a:active {
   text-decoration: none;
-  color: hsl(0deg, 0%, 100%);
+  color:white;
 }
 
 li {
@@ -40,21 +40,21 @@ li {
 
 
 .btn {
-  color: hsl(0deg, 0%, 100%);
+  color:white;
   font-size: 1.8rem;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   gap: 0.5rem;
-  background-color: hsl(167deg, 82%, 65%);
+  background-color: skyblue;
   padding: 1rem 2rem;
   border-radius: 3px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   overflow: hidden;
 }
 .btn span {
-  color: hsl(0deg, 0%, 100%);
+  color: white;
   font-weight: 700;
   letter-spacing: 1.2px;
   flex-wrap: nowrap;
@@ -62,7 +62,7 @@ li {
 }
 
 .btn:hover, .btn:visited {
-  color: hsl(0deg, 0%, 100%);
+  color: white;
 }
 
 
@@ -73,34 +73,15 @@ li {
   border: none;
   margin: 8rem auto;
   font-weight: 700;
-  color: hsl(167deg, 82%, 65%);
+  color: skyblue;
   background-color: transparent;
-  border: 3px solid hsl(167deg, 82%, 65%);
+  border: 3px solid skyblue;
   transition: all 500ms ease-in-out;
 }
-.btn-view-all::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: -20px;
-  width: 30px;
-  height: 15px;
-  background-color: hsl(167deg, 82%, 65%);
-}
-.btn-view-all::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: -20px;
-  width: 30px;
-  height: 15px;
-  background-color: hsl(167deg, 82%, 65%);
-}
+
 .btn-view-all:hover {
-  background-color: hsl(167deg, 82%, 65%);
-  color: hsl(198deg, 100%, 6%);
+  background-color: skyblue;
+  color: rgb(3, 45, 62);
 }
 
 .main-container {
@@ -113,7 +94,7 @@ li {
   max-width: 1000px;
   margin: 4rem auto;
   text-align: center;
-  color: hsl(0deg, 0%, 100%);
+  color:white;
 }
 .main-text h1 {
   font-size: 4rem;
@@ -121,7 +102,7 @@ li {
   margin-bottom: 2rem;
 }
 .main-text h1 span {
-  color: hsl(55, 100%, 50%);
+  color: rgb(248, 248, 11);
 }
 .main-text h2 {
   display: inline-block;
@@ -160,14 +141,6 @@ li {
   height: 50px;
 }
 
-.overlay2 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: linear-gradient(transparent, rgb(0, 23, 33));
-  width: 100%;
-  height: 50px;
-}
 
 .image-box {
   cursor: pointer;
@@ -178,6 +151,7 @@ li {
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
+
 .image-box img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -188,7 +162,7 @@ li {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: hsl(0deg, 0%, 10%);
+  background-color: black;
   width: 100%;
   height: 100%;
   opacity: 60%;
@@ -200,13 +174,13 @@ li {
 }
 .image-box-text h2 {
   font-size: 3rem;
-  color: hsl(0deg, 0%, 100%);
+  color: white;
   opacity: 80%;
 }
 .image-box-text p {
   font-size: 1.5rem;
   font-weight: 500;
-  color: hsl(0deg, 0%, 100%);
+  color: white;
   opacity: 80%;
 }
 
@@ -219,8 +193,8 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: hsl(0deg, 0%, 3%);
-  color: hsl(0deg, 0%, 100%);
+  background-color: 080808;
+  color:white;
   padding: 1rem 2rem;
   z-index: 9999;
 }
@@ -242,7 +216,7 @@ li {
   font-size: 2rem;
 }
 .primary-header .left-part .logo h1 span {
-  color: hsl(60, 89%, 50%);
+  color: yellow;
   letter-spacing: 2px;
 }
 .primary-header .right-part .navbar {
@@ -255,7 +229,7 @@ li {
   width: 70%;
   gap: 1.5rem;
   letter-spacing: 1px;
-  background-color: hsl(0deg, 0%, 10%);
+  background-color: black;
   transition: all 1000ms ease-in-out;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   padding: 1rem;
@@ -267,13 +241,13 @@ li {
   flex-direction: column;
 }
 .primary-header .right-part .navbar ul li a {
-  color: hsl(0deg, 0%, 100%);
+  color: white;
   font-size: 2rem;
   font-weight: 500;
   transition: all 500ms ease-in-out;
 }
 .primary-header .right-part .navbar ul li a:hover {
-  color: hsl(167deg, 82%, 65%);
+  color: skyblue;
 }
 .primary-header .right-part .navbar.active {
   opacity: 1;
@@ -304,31 +278,14 @@ li {
 }
 .banner-text h1 {
   font-size: 8vh;
-  color: hsl(0deg, 0%, 100%);
+  color: white;
   margin-bottom: 2rem;
   letter-spacing: 1px;
   text-transform: uppercase;
   line-height: 1.3;
   font-family: "Poppins", sans-serif;
 }
-.banner-text h1 span {
-  color: hsl(167deg, 82%, 65%);
-}
-.banner-text p {
-  color: hsl(0deg, 0%, 100%);
-  font-size: 1.8rem;
-  letter-spacing: 1px;
-  margin-bottom: 3rem;
-  padding-right: 2rem;
-}
-.banner-text .btn-get {
-  display: inline-block;
-  padding: 1rem 4rem;
-  transition: all 500ms ease-in-out;
-}
-.banner-text .btn-get:hover {
-  background-color: hsl(167deg, 61%, 45%);
-}
+
 
 .experience {
   margin: 10rem auto 0rem auto;
@@ -353,76 +310,71 @@ li {
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
-.about .main-container video {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
 
-.Place {
+
+.place {
   width: 100%;
   margin: 0rem auto 0rem auto;
   padding: 10rem 2rem 2rem 2rem;
 }
-.Place .main-container {
+.place .main-container {
   margin: 5rem auto;
 }
-.Place .main-container .Place-cards {
+.place .main-container .place-cards {
   margin-top: 8rem;
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
 }
-.Place .main-container .Place-cards .image-box {
+.place .main-container .place-cards .image-box {
   border-radius: 5px;
   grid-column: span 2;
   height: auto;
 }
-.Place .main-container .Place-cards .image-box .overlay {
+.place .main-container .place-cards .image-box .overlay {
   opacity: 25%;
 }
-.Place .main-container .Place-cards .image-box-text h2 {
+.place .main-container .place-cards .image-box-text h2 {
   font-size: 1.3rem;
 }
-.Place .main-container .Place-cards .image-box-text p {
+.place .main-container .place-cards .image-box-text p {
   font-size: 1rem;
 }
-.Place .main-container .Place-cards-text {
-  color: hsl(0deg, 0%, 100%);
+.place .main-container .place-cards-text {
+  color: white;
   line-height: 1.7;
 }
-.Place .main-container .Place-cards-text h1 {
+.place .main-container .place-cards-text h1 {
   cursor: pointer;
   font-size: 3rem;
   margin-bottom: 1rem;
   transition: all 350ms ease-in-out;
 }
-.Place .main-container .Place-cards-text h1:hover {
-  color: hsl(167deg, 82%, 65%);
+.place .main-container .place-cards-text h1:hover {
+  color: skyblue;
 }
-.Place .main-container .Place-cards-text p {
+.place .main-container .place-cards-text p {
   cursor: pointer;
   font-size: 1.3rem;
   opacity: 70%;
   margin-bottom: 3rem;
 }
-.Place .main-container .Place-cards-text .btn-map {
+.place .main-container .place-cards-text .btn-map {
   display: flex;
   align-items: center;
   flex-direction: row;
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
-  color: hsl(167deg, 82%, 65%);
+  color: skyblue;
   text-decoration: underline;
 }
-.Place .main-container .Place-cards-text .btn-map svg {
+.place .main-container .place-cards-text .btn-map svg {
   width: 25px;
 }
-.Place .main-container .Place-cards-text .btn-map span {
+.place .main-container .place-cards-text .btn-map span {
   font-size: 1.4rem;
 }
-.Place .main-container .Place-cards-text .price {
+.place .main-container .place-cards-text .price {
   width: 100%;
   max-width: 500px;
   cursor: pointer;
@@ -430,34 +382,34 @@ li {
   display: flex;
   flex-direction: row;
   align-items: center;
-  color: hsl(0deg, 0%, 3%);
+  color: black;
   border-radius: 50px;
   text-align: center;
 }
-.Place .main-container .Place-cards-text .price p {
+.place .main-container .place-cards-text .price p {
   padding: 0.6rem;
-  background-color: hsl(0deg, 0%, 100%);
+  background-color:white;
   text-align: center;
   font-size: 1.3rem;
   flex-basis: 35%;
   margin: 0;
-  color: hsl(0deg, 0%, 3%);
+  color: black;
   opacity: 100%;
   font-weight: 700;
   display: flex;
   flex-direction: column;
   border-radius: 10rem 0rem 0rem 10rem;
 }
-.Place .main-container .Place-cards-text .price h4 {
+.place .main-container .place-cards-text .price h4 {
   padding: 1.5rem 0rem;
   border-radius: 0rem 10rem 10rem 0rem;
-  background-color: hsl(0deg, 0%, 90%);
+  background-color: white;
   flex-basis: 75%;
   opacity: 80%;
 }
 
 
-.sale {
+.offer {
   background: linear-gradient(to top left, rgba(17, 97, 106, 0.3), rgba(255, 255, 255, 0)),
     url("../images/places/magicalmysterytour.jpg");
   background-repeat: no-repeat;
@@ -475,37 +427,37 @@ li {
 }
 
 
-.sale .heading {
+.offer .heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
   margin-bottom: 2rem;
 }
-.sale .heading h1 {
+.offer .heading h1 {
   cursor: pointer;
   transition: all 350ms ease-in-out;
   font-size: 4rem;
 }
-.sale .heading h1:hover {
-  color: hsl(167deg, 82%, 65%);
+.offer .heading h1:hover {
+  color: skyblue;
 }
-.sale .heading h2 {
+.offer .heading h2 {
   font-size: 1.6rem;
   text-transform: uppercase;
   padding: 0.5rem 1rem;
-  background-color: hsl(198deg, 100%, 6%);
-  color: hsl(167deg, 82%, 65%);
+  background-color: rgb(2, 29, 39);
+  color: skyblue;
   border-radius: 50px;
 }
-.sale .info {
+.offer .info {
   width: 100%;
   margin-bottom: 2rem;
 }
-.sale .info p {
+.offer .info p {
   font-size: 1.4rem;
 }
-.sale .price {
+.offer .price {
   width: 100%;
   max-width: 500px;
   cursor: pointer;
@@ -513,28 +465,28 @@ li {
   display: flex;
   flex-direction: row;
   align-items: center;
-  color: hsl(0deg, 0%, 3%);
+  color: black;
   border-radius: 50px;
   text-align: center;
 }
-.sale .price p {
+.offer .price p {
   padding: 0.6rem;
-  background-color: hsl(0deg, 0%, 100%);
+  background-color: white;
   text-align: center;
   font-size: 1.3rem;
   flex-basis: 35%;
   margin: 0;
-  color: hsl(0deg, 0%, 3%);
+  color: black;
   opacity: 100%;
   font-weight: 700;
   display: flex;
   flex-direction: column;
   border-radius: 10rem 0rem 0rem 10rem;
 }
-.sale .price h2 {
+.offer .price h2 {
   padding: 1.5rem 0rem;
   border-radius: 0rem 10rem 10rem 0rem;
-  background-color: hsl(0deg, 0%, 90%);
+  background-color: white;
   flex-basis: 75%;
   opacity: 80%;
 }
@@ -571,7 +523,7 @@ li {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  color: hsl(0deg, 0%, 100%);
+  color:white;
   text-shadow: 2px 2px 0px #000000, 4px 4px 0px #000000, 6px 6px 0px #000000;
   font-size: 3rem;
   text-align: center;
@@ -588,40 +540,11 @@ li {
   opacity: 1;
 }
 
-.contact {
-  margin: 0rem auto;
-  padding: 10rem 2rem 2rem 2rem;
-}
-.contact .main-container form {
-  width: 100%;
-  max-width: 600px;
-  color: hsl(0deg, 0%, 100%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  row-gap: 1rem;
-  margin: 0 auto;
-}
-.contact .main-container .btn-send {
-  margin-top: 2rem;
-  padding: 1rem 4rem;
-  border: none;
-  cursor: pointer;
-  background-color: hsl(167deg, 82%, 65%);
-  color: hsl(198deg, 100%, 6%);
-  font-weight: 700;
-  font-size: 1.6rem;
-  transition: all 350ms ease-in-out;
-}
-.contact .main-container .btn-send:hover {
-  background-color: hsl(167deg, 61%, 45%);
-}
 
 
 footer {
   margin: 5rem auto 0rem auto;
-  background-color: hsl(0deg, 0%, 3%);
+  background-color:black;
 }
 footer .footer-image {
   width: 100%;
@@ -636,8 +559,8 @@ footer .footer-image .overlay2 {
   background: linear-gradient(transparent, rgb(8, 8, 8), rgb(8, 8, 8));
 }
 footer .main-container {
-  background-color: hsl(0deg, 0%, 3%);
-  color: hsl(0deg, 0%, 100%);
+  background-color: black;
+  color: white;
   margin: 0rem auto;
   padding: 1rem 2rem;
   display: grid;
@@ -666,21 +589,12 @@ footer .main-container h1::after {
   left: 1.4rem;
   width: 28px;
   height: 0.4rem;
-  background-color: hsl(57, 100%, 50%);
+  background-color:yellow;
   border-radius: 8px;
   opacity: 80%;
 }
 
-footer .main-container .heading-foo h1 {
-  margin-bottom: 1rem;
-}
-footer .main-container .social-media {
-  order: 3;
-  display: flex;
-  justify-content: left;
-  flex-direction: column;
-  gap: 3rem;
-}
+
 
 footer .main-container .main {
   display: flex;
@@ -698,28 +612,20 @@ footer .main-container .main ul li a {
   transition: all 350ms ease-in-out;
 }
 footer .main-container .main ul li a:hover {
-  color: hsl(167, 98%, 52%);
+  color: skyblue;
 }
 footer .main-container .contact-info {
   display: flex;
   flex-direction: column;
   gap: 3rem;
 }
-footer .credit {
-  margin: 5rem auto 0rem;
-  padding: 0 0 4rem 0;
-  color: hsl(0deg, 0%, 100%);
-  text-align: center;
-  letter-spacing: 1.2px;
-}
-footer .credit a {
-  color: hsl(167deg, 82%, 65%);
-}
+
 
   
   .primary-header {
     padding: 1rem 6rem;
     gap: 2rem;
+    background-color: #00151F;
   }
   .primary-header .left-part .logo {
     display: inline-block;
@@ -779,13 +685,13 @@ footer .credit a {
   }
 
 
-  .Place .main-container .Place-cards {
+  .place .main-container .place-cards {
     grid-template-columns: 1fr 1fr;
   }
-  .Place .main-container .Place-cards .image-box {
+  .place .main-container .place-cards .image-box {
     grid-column: 1/1;
   }
-  .sale .info {
+  .offer .info {
     width: 50%;
   }
   footer .main-container .main {
@@ -796,7 +702,7 @@ footer .credit a {
 
 
 
-/*https: //codepen.io/douglasalex/pen/PoRPQMd*/   /*The Slider*/
+/*https: //codepen.io/douglassalex/pen/PoRPQMd*/   /*The Slider*/
 
 .content {
   width: 100%;
