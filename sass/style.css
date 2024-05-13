@@ -121,7 +121,7 @@ li {
   margin-bottom: 2rem;
 }
 .main-text h1 span {
-  color: hsl(167deg, 82%, 65%);
+  color: hsl(55, 100%, 50%);
 }
 .main-text h2 {
   display: inline-block;
@@ -697,21 +697,11 @@ footer .main-container h1::after {
   left: 1.4rem;
   width: 28px;
   height: 0.4rem;
-  background-color: hsl(167deg, 82%, 65%);
+  background-color: hsl(57, 100%, 50%);
   border-radius: 8px;
   opacity: 80%;
 }
-footer .main-container h1::before {
-  content: "";
-  position: absolute;
-  bottom: -6px;
-  left: 0;
-  width: 0.8rem;
-  height: 0.4rem;
-  background-color: hsl(167deg, 82%, 65%);
-  border-radius: 8px;
-  opacity: 80%;
-}
+
 footer .main-container .heading-foo h1 {
   margin-bottom: 1rem;
 }
