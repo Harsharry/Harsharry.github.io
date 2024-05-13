@@ -186,27 +186,7 @@ li {
   padding: 1rem 2rem;
   z-index: 9999;
 }
-.primary-header .left-part {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 1rem;
-}
-.primary-header .left-part img {
-  width: 50px;
-  filter: grayscale(1) invert(1);
-}
-.primary-header .left-part .logo {
-  display: none;
-}
-.primary-header .left-part .logo h1 {
-  font-family: "Poppins", sans-serif;
-  font-size: 2rem;
-}
-.primary-header .left-part .logo h1 span {
-  color: yellow;
-  letter-spacing: 2px;
-}
+
 .primary-header .right-part .navbar {
   opacity: 0;
   position: absolute;
@@ -615,9 +595,7 @@ footer .main-container .contact-info {
     gap: 2rem;
     background-color: #00151F;
   }
-  .primary-header .left-part .logo {
-    display: inline-block;
-  }
+
   .primary-header .right-part {
     display: flex;
     flex-direction: row;
